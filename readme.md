@@ -5,6 +5,8 @@
 
 ## Link
 
+https://cecilestaller.github.io/js-project-calorieCalculator/
+
 ## Tools
 
 - HTML5

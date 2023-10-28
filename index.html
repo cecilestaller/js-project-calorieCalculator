@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section class="calc_wrapper">
+            <h1>Kalorienrechner</h1>
+            <form onsubmit="return false">
+                <div class="div_height">
+                    <label for="height-input">Körpergröße [in cm]</label>
+                    <input type="number" name="height-input" id="height-input" required>
+                </div>
+                <div class="div_age">
+                    <label for="age-input">Alter [in Jahren]</label>
+                    <input type="number" name="age-input" id="age-input" required>
+                </div>
+                <div class="div_weight">
+                    <label for="weight-input">Gewicht [in kg]</label>
+                    <input type="number" name="weight-input" id="weight-input" required>
+                </div>
+                <div class="div_radio">
+                    <label for="female"><input type="radio" name="gender-input" id="female"> Weiblich</label>
+                    <label for="male"><input type="radio" name="gender-input" id="male"> Männlich</label>
+                </div>
+                <div class="div_activity">
+                    <label for="activity-input">Art der Tätigkeit</label>
+                    <select name="activity-input" id="activity-input">
+                        <option value="0.95">Schlafen</option>
+                        <option value="1.2">Nur sitzen oder liegen</option>
+                        <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig körperl. Aktivität</option>
+                        <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+                        <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+                        <option value="2.2">Körperlich anstrengende Tätigkeit</option>
+                    </select>
+                </div>
+                <div class="div_button">
+                    <button type="submit" id="calculate">Submit</button>
+                </div>
+            </form>
+            <p id="error"></p>
+            <article class="result_grid">
+                <p>kCal</p>
+                <p>kJ</p>
+                <p>Grundumsatz</p>
+                <p id="basic-kcal-output"></p>
+                <p id="basic-kj-output"></p>
+                <p>Gesamtumsatz</p>
+                <p id="total-kcal-output"></p>
+                <p id="total-kj-output"></p>
+            </article>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
